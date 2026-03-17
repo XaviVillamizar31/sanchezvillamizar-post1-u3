@@ -295,3 +295,11 @@ textarea {
 .btn-primary:active {
     transform: scale(0.98);
 }
+
+.site-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--color-dark);
+    color: var(--color-white);
+    font-size: 0.85rem;
+}
