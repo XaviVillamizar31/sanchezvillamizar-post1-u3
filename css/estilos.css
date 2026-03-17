@@ -149,3 +149,70 @@ main {
 .profile-bio {
     color: var(--color-text);
 }
+
+.skills-section {
+    padding: 3rem 0;
+    background: var(--color-bg);
+}
+
+/* Selector descendente: .section-title dentro de cualquier sección */
+.skills-section .section-title,
+.contact-section .section-title {
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    max-width: 960px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Estilos base para todos los skill items */
+.skills-list>.skill-item {
+    /* selector hijo directo */
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: default;
+    transition: transform 0.15s ease;
+}
+
+.skills-list>.skill-item:hover {
+    transform: translateY(-2px);
+}
+
+/* Modificadores BEM: color por habilidad */
+.skill-item--html {
+    background: #F0F0F0;
+    color: #C62828;
+    border: 2px solid #C62828;
+}
+
+.skill-item--css {
+    background: #E8F4F8;
+    color: #065A82;
+    border: 2px solid #065A82;
+}
+
+.skill-item--js {
+    background: #FFF8E1;
+    color: #F57F17;
+    border: 2px solid #F57F17;
+}
+
+.skill-item--java {
+    background: #E8F5E9;
+    color: #2E7D32;
+    border: 2px solid #2E7D32;
+}
